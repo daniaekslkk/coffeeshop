@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Medium.ttf);
+    }
+    @font-face {
+    font-family: RobotoL;
+    src: url(fonts/Roboto-Light.ttf);
+    }
+    @font-face {
+    font-family: RobotoB;
+    src: url(fonts/Roboto-Bold.ttf);
+    }
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body {
+    background-color: #fff;
+    color: #333;
+}
+.banner:before {
+    content: "";
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #54854e; 
+    z-index: 1;
+  }
+
+/* HEADER 
+-----------------------------------------------*/
+div.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4d7847;
+    color: #ffffff;
+    text-align: left;
+    bottom: 100%;
+  }
+  
+.header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    margin-right: -100px;
+    margin: 24px;
+    font-family: Roboto;
+}
+  
+/* BANNER 
+-----------------------------------------------*/
+.bron-banner {
+    position: relative;
+    height: 50vh;
+    background-color: #54854e;
+    z-index: 2;
+}
+.information {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+}
+.information h2{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px; /*расстояние между строк*/
+} 
+.information p{
+    text-align: center;
+}
+
+/* BOOKING-SECTION 
+-----------------------------------------------*/
+.booking-section {
+    background-color: #fff;
+    padding: 90px 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Roboto;
+}
+.booking-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+    text-align: left;
+}
+.booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}  
+.booking-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #54854e;
+    border: none;
+    border-radius: 20px;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.booking-button:hover {
+    background-color: #54854e;
+}
+
+.booking-button a{
+    color: #ffffff;
+    text-decoration: none;
+}
