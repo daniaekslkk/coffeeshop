@@ -1,0 +1,356 @@
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Medium.ttf);
+  }
+  @font-face {
+  font-family: RobotoL;
+  src: url(fonts/Roboto-Light.ttf);
+  }
+  @font-face {
+  font-family: RobotoB;
+  src: url(fonts/Roboto-Bold.ttf);
+  }
+ 
+
+.main {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  height: 100%;
+  font-family: Roboto;
+  color: #5f5f5f;
+}
+
+.site-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+
+.banner:before {
+  content: "";
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 44, 26, 0.8); 
+  z-index: 1;
+}
+
+/* HEADER 
+-----------------------------------------------*/
+div.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  color: #5f5f5f;
+  text-align: left;
+  bottom: 100%;
+}
+
+.header a {
+  color: #5f5f5f;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  margin-right: -100px;
+  margin: 24px;
+}
+
+
+
+/* BANNER 
+-----------------------------------------------*/
+div.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('img/back.jpg') center/cover no-repeat;
+  z-index: 2;
+}
+div.information {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 3;
+  color: white;
+  
+}
+div.information h2{
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 10px; /*расстояние между строк*/
+}
+div.information p{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px; /*расстояние между строк*/
+  font-family: RobotoL;
+}
+div.banner button{
+  background-color: #54854e;
+  color: white;
+  height: 60px;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  /*выравнивание по центру*/
+  display: block;
+  margin: 0 auto;
+}
+
+.banner a{
+  color: white;
+  text-decoration: none;
+}
+
+/* COFFEE 
+-----------------------------------------------*/
+.coffee-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.text-container {
+  flex: 1;
+  padding-right: 20px;
+}
+.text-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #54854e;
+}
+.text-container p {
+  font-size: 1.2rem;
+  color: #5f5f5f;
+  line-height: 1.8;
+}
+.images-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.large-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.small-imgs {
+  display: flex;
+  gap: 10px;
+}
+.small-img {
+  width: 33%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* MASTERCLASS 
+-----------------------------------------------*/
+.masterclass-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+.title-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #54854e;
+}
+.title-container p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #666;
+}
+.classes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.class-item {
+  display: flex;
+  align-items: flex-start;
+  max-width: 400px;
+  text-align: left;
+}
+.class-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+.class-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #54854e;
+}
+.class-info p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* testimonials-section 
+-----------------------------------------------*/
+.testimonials-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #54854e;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimonial-content {
+  max-width: 500px;
+}
+
+.testimonial-content p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.testimonial-content h3 {
+  font-size: 1.2rem;
+  color: #54854e;
+}
+
+.testimonial-content span {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* services-section 
+-----------------------------------------------*/
+.services-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #54854e;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  color: #54854e;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* contacts-section 
+-----------------------------------------------*/
+.contacts-section {
+  text-align: center;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+.contact-header {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #666;
+  margin-bottom: 15px;
+}
+.contact-phone {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+.contact-email {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+}
+.contact-address {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* END
+-----------------------------------------------*/
+.end{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.end p{
+  text-align: center;
+  color: rgb(149, 149, 149)
+}
