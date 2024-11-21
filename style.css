@@ -116,7 +116,7 @@ div.banner button{
   text-decoration: none;
 }
 
-/* COFFEE 
+/* coffee-section 
 -----------------------------------------------*/
 .coffee-section {
   display: flex;
@@ -353,4 +353,107 @@ div.banner button{
 .end p{
   text-align: center;
   color: rgb(149, 149, 149)
+}
+
+@media (max-width: 768px) {
+
+  .banner h2{
+    font-size: 1.9rem;
+  }
+  /* coffee-section
+  --------------------------------------------------------------------------*/
+  .coffee-section {
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: flex-start; /* Слева направо */
+    padding: 20px; /* Уменьшенные отступы */
+  }
+
+  .text-container {
+    padding-right: 0;
+    width: 100%;
+    text-align: center; /* Текст по центру */
+    margin-bottom: 20px;
+  }
+
+  .text-container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  .text-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .images-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем изображения */
+  }
+
+  .large-img {
+    width: 100%; /* Изображение на всю ширину */
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .small-imgs {
+    display: flex;
+    flex-wrap: wrap; /* Перенос строк для маленьких изображений */
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .small-img {
+    width: calc(50% - 5px); /* 2 изображения в строке */
+    height: auto;
+  }
+
+  /* Testimonial Section 
+  --------------------------------------------------------------------------*/
+  .testimonial-content {
+    max-width: 100%; /* Убираем ограничение ширины */
+    padding: 10px;
+  }
+  .testimonial-content p {
+    font-size: 0.85rem; /* Уменьшаем шрифт */
+    margin-bottom: 8px;
+  }
+  .testimonial-content h3 {
+    font-size: 1rem; /* Уменьшаем заголовок */
+  }
+  .testimonial-content span {
+    font-size: 0.75rem; /* Уменьшаем подзаголовок */
+  }
+  .testimonials-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем изображения */
+  }
+
+  /* Services Section */
+  .services-section {
+    padding: 15px; /* Уменьшаем отступы */
+  }
+  .services-section h2 {
+    font-size: 1.4rem; /* Уменьшаем размер заголовка */
+    margin-bottom: 15px;
+  }
+  .services-container {
+    grid-template-columns: 1fr; /* Один столбец */
+    gap: 15px;
+  }
+  .service-item {
+    padding: 10px; /* Уменьшаем внутренние отступы */
+  }
+  .service-item h3 {
+    font-size: 1.1rem; /* Уменьшаем заголовок */
+    margin-bottom: 6px;
+  }
+  .service-item p {
+    font-size: 0.85rem; /* Уменьшаем текст */
+  }
+
 }

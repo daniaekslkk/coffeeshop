@@ -85,12 +85,15 @@ div.header {
 -----------------------------------------------*/
 .booking-section {
     background-color: #fff;
-    padding: 90px 400px;
+    padding: 30px 20px; /* Уменьшили отступы */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-family: Roboto;
+    max-width: 400px; /* Максимальная ширина формы */
+    margin: 50px auto; /* Центрирование формы */
 }
+
 .booking-form label {
     display: block;
     font-size: 14px;
@@ -98,6 +101,7 @@ div.header {
     color: #333;
     text-align: left;
 }
+
 .booking-form input {
     width: 100%;
     padding: 10px;
@@ -106,6 +110,7 @@ div.header {
     border-radius: 4px;
     font-size: 14px;
 }  
+
 .booking-button {
     display: inline-block;
     padding: 10px 20px;
@@ -115,16 +120,34 @@ div.header {
     background-color: #54854e;
     border: none;
     border-radius: 20px;
-    
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
   
 .booking-button:hover {
-    background-color: #54854e;
+    background-color: #4a7545;
 }
 
-.booking-button a{
+.booking-button a {
     color: #ffffff;
     text-decoration: none;
+}
+
+/* Адаптивная версия для мобильных устройств */
+@media (max-width: 768px) {
+    .booking-section {
+        padding: 20px 15px; /* Меньше отступов для компактности */
+        margin: 20px auto; /* Отступы сверху и снизу */
+    }
+}
+
+@media (max-width: 414px) {
+    .booking-section {
+        padding: 15px; /* Еще меньше отступов для маленьких экранов */
+    }
+
+    .booking-button {
+        width: 100%; /* Кнопка занимает всю ширину формы */
+        padding: 12px;
+    }
 }

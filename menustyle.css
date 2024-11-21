@@ -88,36 +88,70 @@ div.information h2{
     background-color: #fff;
     text-align: center;
 }
-    
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* 4 элемента в ряд для больших экранов */
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-}
-    
+}   
 .menu-item {
     text-align: center;
-}
-    
+}   
 .menu-image {
-    width: 150px;
-    height: 150px;
+    width: 120px; /* Уменьшили размер изображения */
+    height: 120px; /* Уменьшили размер изображения */
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 10px;
-}
-    
+} 
 h3 {
-    font-size: 18px;
+    font-size: 16px; /* Уменьшили размер заголовка */
     margin: 5px 0;
     font-weight: bold;
     font-family: RobotoL;
 }
-    
 p {
-    font-size: 14px;
+    font-size: 12px; /* Уменьшили размер текста */
     color: #555;
     font-family: RobotoL;
+}
+
+/* Адаптивная версия для экранов шириной до 768px */
+@media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 элемента в ряд */
+        gap: 15px; /* Уменьшили отступы между элементами */
+    }
+    .menu-image {
+        width: 100px; /* Еще больше уменьшили изображения */
+        height: 100px;
+    }
+    h3 {
+        font-size: 14px; /* Уменьшили текст заголовка */
+    }
+    p {
+        font-size: 12px; /* Уменьшили текст описания */
+    }
+}
+
+/* Адаптивная версия для экранов шириной до 414px */
+@media (max-width: 414px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr); /* Оставили по два в ряд */
+        gap: 10px; /* Минимальный отступ между элементами */
+    }
+
+    .menu-image {
+        width: 90px; /* Сжали изображения */
+        height: 90px;
+    }
+
+    h3 {
+        font-size: 13px; /* Еще меньше текст заголовка */
+    }
+
+    p {
+        font-size: 11px; /* Еще меньше текст описания */
+    }
 }
